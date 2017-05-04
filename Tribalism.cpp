@@ -150,7 +150,7 @@ int main() {
             Player.Mine_Level++;
             printf("Upgrade Mine complete\n");
           } else
-            puts("Eroor! Insufficinet resource Ⅰ");
+            puts("Error! Insufficinet resource Ⅰ");
 #endif  // UI
           break;
         case A:
@@ -161,7 +161,7 @@ int main() {
             Player.A_Level++;
             printf("Upgrade bulding A complete\n");
           } else
-            puts("Eroor! Insufficinet resource Ⅰ");
+            puts("Error! Insufficinet resource Ⅰ");
 #endif  // UI
           break;
         case B:
@@ -172,7 +172,7 @@ int main() {
             Player.B_Level++;
             printf("Upgrade bulding B complete\n");
           } else
-            puts("Eroor! Insufficinet resource Ⅱ");
+            puts("Error! Insufficinet resource Ⅱ");
 #endif  // UI
           break;
         case C:
@@ -183,7 +183,7 @@ int main() {
             Player.C_Level++;
             printf("Upgrade bulding C complete\n");
           } else
-            puts("Eroor! Insufficinet resource Ⅲ");
+            puts("Error! Insufficinet resource Ⅲ");
 #endif  // UI
           break;
         default:
