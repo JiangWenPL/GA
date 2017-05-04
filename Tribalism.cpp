@@ -215,11 +215,11 @@ void Fight(Status *pPlayer) {
     puts("You fail...");
 #ifdef LOSE_LOST
     int Protect_1 =
-        Origin_Protect_1 * (int)pow(2, (double)(pPlayer->A_level - 1));
+        Origin_Protect_1 * (int)pow(2, (double)(pPlayer->A_Level - 1));
     int Protect_2 =
-        Origin_Protect_2 * (int)pow(2, (double)(pPlayer->A_level - 1));
+        Origin_Protect_2 * (int)pow(2, (double)(pPlayer->A_Level - 1));
     int Protect_3 =
-        Origin_Protect_3 * (int)pow(2, (double)(pPlayer->A_level - 1));
+        Origin_Protect_3 * (int)pow(2, (double)(pPlayer->A_Level - 1));
     int Lost_1 = (pPlayer->Resources_First - Protect_1 > 0)
                      ? (pPlayer->Resources_First - Protect_1) * Theta
                      : 0;
