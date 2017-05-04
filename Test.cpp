@@ -20,8 +20,10 @@ int main() {
   //   }
   // }
   int ac;
-  getline(cin, temp);
-  ss << temp;
-  printf("%d", (int)(ss >> ac));
+  do {
+    getline(cin, temp);
+    ss << temp;
+    while (ss >> ac) printf("Ac = %d\n", ac);
+  }
   return 0;
 }

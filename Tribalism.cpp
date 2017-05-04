@@ -17,7 +17,7 @@
 #include <string>
 #include <vector>
 #define UI
-#define DEBUG
+// #define DEBUG
 using namespace std;
 struct Status {
   int Mine_Level;
@@ -56,6 +56,7 @@ const int MineNeed[4][10] = {
 // 2, C -> 3, etc.
 // The 2nd demision index means the cureent level which has not been upgraded.
 // Also count frome level 1.
+void Fight(Status *pPlayer) { ; }
 void PrintStatus(Status Current) {
 #ifdef UI
   puts("You current status is here:");
@@ -94,24 +95,34 @@ void PrintStatus(Status Current) {
     printf("    Sufficent resouces\n");
   else
     printf("    !!! Insufficient resources\n");
+  printf("Type index(s) of action(s) to make decision:\n");
 #endif  // UI
 }
 int main() {
   stringstream orders;
   string buffer;
   int action = -1;
+  int hour = 0;
 #ifdef UI
   puts("Welcome to the world of trabalism");
 #endif  // UI
   do {
-    orders << buffer;
+    printf(
+        "+++++++++++++++++++++++++++++Hour "
+        "%d+++++++++++++++++++++++++++++++++\n",
+        hour++);
+    orders.str(buffer);
 #ifdef DEBUG
     cout << "Buffer=" << buffer << endl;
 #endif  // DEBUG
-    buffer.clear();
-    while (orders >> action) {
+// buffer.clear();
 #ifdef DEBUG
-      cout << "Action=" << action << endl;
+    orders >> action;
+    cout << "Action=" << action << endl;
+#endif  // DEBUG
+    while ((orders >> action)) {
+#ifdef DEBUG
+      // cout << "Action=" << action << endl;
       printf("---------------------------------\n");
 #endif  // DEBUG
       // Becuse there probablly be many orders by player
@@ -165,7 +176,9 @@ int main() {
           break;
       }
     }
-    // orders.str("");
+    orders.clear();
+    // TODO: Fight module
+    Fight(&Player);
     PrintStatus(Player);
     // The gorwth of resources
     Player.Resources_First += MineProduct[Player.Mine_Level];
