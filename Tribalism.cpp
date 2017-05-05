@@ -192,7 +192,7 @@ int main() {
     }
     orders.clear();
     // TODO: Fight module
-    Fight(&Player);
+    if (hour > 1) Fight(&Player);
     PrintStatus(Player);
     // The gorwth of resources
     Player.Resources_First += MineProduct[Player.Mine_Level];
