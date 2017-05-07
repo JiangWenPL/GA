@@ -1,5 +1,5 @@
-#include <cctype>
 #include <algorithm>
+#include <cctype>
 #include <cmath>
 #include <cstdio>
 #include <cstdlib>
@@ -7,6 +7,7 @@
 #include <ctime>
 #include <deque>
 #include <iostream>
+#include <map>
 #include <sstream>
 #include <string>
 #include <vector>
@@ -16,9 +17,19 @@ const int Individual_Max = 200;
 const int Chromosome_Legth = 24;
 const int Individual_Number = 200;
 const int CoeffNum = 6 * 3 + 1;
-const int Depend_Var = 4;
+const int Depend_Var = 3;
 const int Cal_Fit_Num = 800;
 const int Generation_Max = 1000;
+std::map<std::string, char> BinToHex = {
+    {"0000", '0'}, {"0001", '1'}, {"0010", '2'}, {"0011", '3'},
+    {"0100", '4'}, {"0101", '5'}, {"0110", '6'}, {"0111", '7'},
+    {"1000", '8'}, {"1001", '9'}, {"1010", 'A'}, {"1011", 'B'},
+    {"1100", 'C'}, {"1101", 'D'}, {"1110", 'E'}, {"1111", 'F'}};
+std::map<char, std::string> HexToBin = {
+    {'0', "0000"}, {'1', "0001"}, {'2', "0010"}, {'3', "0011"},
+    {'4', "0100"}, {'5', "0101"}, {'6', "0110"}, {'7', "0111"},
+    {'8', "1000"}, {'9', "1001"}, {'A', "1010"}, {'B', "1011"},
+    {'C', "1100"}, {'D', "1101"}, {'E', "1110"}, {'F', "1111"}};
 double Data[Row_Max][Col_Max];
 struct Individual {
   char Chrom[6 * 3 + 1][Chromosome_Legth + 1];
@@ -32,8 +43,8 @@ struct Individual {
   //   Fitness = 0;
   // }
 };
-bool Compare_Ind(Individual* pInd1, Individual* pInd2) {
-  return (pInd1->Fitness < pInd2->Fitness);
+bool Compare_Ind(Individual Ind1, Individual Ind2) {
+  return (Ind1.Fitness < Ind2.Fitness);
 }
 // Global var:
 Individual Unit[Individual_Max];
@@ -92,8 +103,8 @@ void Calculate_Fitness(Individual* pUnits_CF) {
     Rand_CF = (int)floor((1.0 * Row_Max * rand() / RAND_MAX));
     if (Rand_CF == Row_Max) Rand_CF = Row_Max - 1;
     pCheck[Row_CF][0] = Data[Rand_CF][0];
-    pCheck[Row_CF][1] = Data[Rand_CF][2];
-    pCheck[Row_CF][2] = Data[Rand_CF][3];
+    pCheck[Row_CF][1] = Data[Rand_CF][1];
+    pCheck[Row_CF][2] = Data[Rand_CF][2];
     pCheck[Row_CF][3] = Data[Rand_CF][Depend_Var];
   }
   for (int GeneID_CF = 0; GeneID_CF < Individual_Max;
@@ -121,7 +132,7 @@ int Selction(Individual* pUnits_CF) {
   for (int Cp_Id = 0; Cp_Id < Individual_Max; Cp_Id++, Temp_ind++, pIter++) {
     *Temp_ind = *pIter;
   }
-  std::sort(Temp_ind, Temp_ind + Individual_Max - 1, Compare_Ind);
+   std::sort(Temp_ind_begin, Temp_ind_begin + Individual_Max - 1, Compare_Ind);
   Surive_Num = 0;
   for (int Sel_Id = 0; Sel_Id < Individual_Max; Sel_Id++, Temp_ind++) {
     Temp_ind->Surive = 1.0 - 0.005 * Sel_Id;
