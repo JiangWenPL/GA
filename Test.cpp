@@ -17,6 +17,19 @@ using namespace std;
 //   double Coeff[Gene_Max][6 * 3 + 1];
 //   double Fitness;
 // };
+const int CoeffNum = 6*3 + 1;
+struct Individual {
+  char Chrom[CoeffNum][Chromosome_Legth];
+  double Coeff[CoeffNum];
+  double Fitness;
+  double Surive;
+  bool Alive;
+  // Individual() {
+  //   memset(Chrom, 0, sizeof(Chrom));
+  //   memset(Coeff, 0, sizeof(Coeff));
+  //   Fitness = 0;
+  // }
+};
 const int HexChromLength = 8;
 const char HexTab[][5] = {"0000", "0001", "0010", "0011", "0100", "0101",
                           "0110", "0111", "1000", "1001", "1010", "1011",
@@ -82,6 +95,7 @@ int main() {
   double a = -111.23456;
   char b[28];
   Encode(a, b);
+  Individual A, B;
   // printf("Encoded: %s\n", b);
   cout << Decode(b) << endl;
   printf("%f", fmod(a, 10));

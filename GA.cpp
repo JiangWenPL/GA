@@ -11,16 +11,18 @@
 #include <sstream>
 #include <string>
 #include <vector>
+const double Mutation_Probability = 0.01;
 const int Row_Max = 89266;
 const int Col_Max = 5;
 const int Individual_Max = 200;
-const int Chromosome_Legth = 24;
+const int Chromosome_Legth = 28;
 const int Individual_Number = 200;
 const int CoeffNum = 6 * 3 + 1;
 const int Depend_Var = 3;
 const int Cal_Fit_Num = 800;
 const int Generation_Max = 1000;
 const int HexChromLength = 8;
+const double Gene_Recombination_Probability = 0.5;
 std::map<std::string, char> BinToHex = {
     {"0000", '0'}, {"0001", '1'}, {"0010", '2'}, {"0011", '3'},
     {"0100", '4'}, {"0101", '5'}, {"0110", '6'}, {"0111", '7'},
@@ -33,7 +35,7 @@ std::map<char, std::string> HexToBin = {
     {'C', "1100"}, {'D', "1101"}, {'E', "1110"}, {'F', "1111"}};
 double Data[Row_Max][Col_Max];
 struct Individual {
-  char Chrom[6 * 3 + 1][Chromosome_Legth + 1];
+  char Chrom[CoeffNum][Chromosome_Legth];
   double Coeff[CoeffNum];
   double Fitness;
   double Surive;
@@ -54,19 +56,19 @@ int Surive_Num = 0;
 bool Compare_Ind(Individual Ind1, Individual Ind2) {
   return (Ind1.Fitness < Ind2.Fitness);
 }
-char *Encode(double Code, char *Chrome) {
+char* Encode(double Code, char* Chrome) {
   char HexBuf[8 + 1];
-  if (Code > 10 || Code < -10) Code = fmod(Code,10);
+  if (Code > 10 || Code < -10) Code = fmod(Code, 10);
   sprintf(HexBuf, "%07X", (int)floor(Code * 1000000));
   for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
     sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
   }
   return Chrome;
 }
-double Decode(char *Chrome) {
+double Decode(char* Chrome) {
   char DecodeBuf[8 + 1];
   memset(DecodeBuf, 0, sizeof(DecodeBuf));
-  string Decoded = Chrome;
+  std::string Decoded = Chrome;
   for (int Iter_BH = 0; Iter_BH < HexChromLength; Iter_BH++) {
     DecodeBuf[Iter_BH] = BinToHex[Decoded.substr(Iter_BH * 4, 4)];
   }
@@ -99,15 +101,30 @@ bool Write_Individual(const Individual* pUnits_WI) {
   FILE* fpCoeff = NULL;
   fpCoeff = fopen("./Coeff.txt", "a+");
   if (fpCoeff == NULL) return false;
+  fprintf(fpCoeff, "Affter %d Generations:\n", Generation);
   for (int GeneID_WI = 0; GeneID_WI < Individual_Max;
        GeneID_WI++, pUnits_WI++) {
     fprintf(fpCoeff, "No.%3d Fitness:%f\n", GeneID_WI, pUnits_WI->Fitness);
     for (int iWI = 0; iWI < CoeffNum; iWI++) {
-      fprintf(fpCoeff, "%f ", pUnits_WI->Coeff[iWI]);
+      fprintf(fpCoeff, "%.6f ", pUnits_WI->Coeff[iWI]);
     }
     fprintf(fpCoeff, "\n");
   }
   if (fclose(fpCoeff) != 0) return false;
+  return true;
+}
+bool DEBUG_Write(const Individual* pDEBUG, int RangeInd, int Range_Coeff) {
+  FILE* fpDEBUG = NULL;
+  fpDEBUG = fopen("./DEBUG.txt", "w");
+  if (fpDEBUG == NULL) return false;
+  for (int GeneID_WI = 0; GeneID_WI < RangeInd; GeneID_WI++, pDEBUG++) {
+    fprintf(fpDEBUG, "No.%3d Fitness:%f\n", GeneID_WI, pDEBUG->Fitness);
+    for (int iWI = 0; iWI < Range_Coeff; iWI++) {
+      fprintf(fpDEBUG, "%.6f ", pDEBUG->Coeff[iWI]);
+    }
+    fprintf(fpDEBUG, "\n");
+  }
+  if (fclose(fpDEBUG) != 0) return false;
   return true;
 }
 void Init_Individual(Individual* pUnits_II) {
@@ -120,8 +137,9 @@ void Init_Individual(Individual* pUnits_II) {
 }
 void Calculate_Fitness(Individual* pUnits_CF) {
   double(*pCheck)[4] = (double(*)[4])malloc(sizeof(double) * Cal_Fit_Num * 4);
+
   for (int Row_CF = 0, Rand_CF = 0; Row_CF < Cal_Fit_Num; Row_CF++) {
-    Rand_CF = (int)floor((1.0 * Row_Max * rand() / RAND_MAX));
+    Rand_CF = (int)floor((1.0 * Row_Max * rand()) / RAND_MAX);
     if (Rand_CF == Row_Max) Rand_CF = Row_Max - 1;
     pCheck[Row_CF][0] = Data[Rand_CF][0];
     pCheck[Row_CF][1] = Data[Rand_CF][1];
@@ -132,10 +150,10 @@ void Calculate_Fitness(Individual* pUnits_CF) {
        GeneID_CF++, pUnits_CF++) {
     pUnits_CF->Fitness = 0;
     for (int i_CF = 0; i_CF < Cal_Fit_Num; i_CF++) {
-      pUnits_CF->Fitness = pow((Function(pUnits_CF->Coeff, pCheck[i_CF][0],
-                                         pCheck[i_CF][1], pCheck[i_CF][2])) -
-                                   pCheck[i_CF][3],
-                               2);
+      pUnits_CF->Fitness +=
+          std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
+                             pCheck[i_CF][2])) -
+                   pCheck[i_CF][3]);
     }
   }
   free(pCheck);
@@ -153,11 +171,12 @@ int Selction(Individual* pUnits_CF) {
   for (int Cp_Id = 0; Cp_Id < Individual_Max; Cp_Id++, Temp_ind++, pIter++) {
     *Temp_ind = *pIter;
   }
-   std::sort(Temp_ind_begin, Temp_ind_begin + Individual_Max - 1, Compare_Ind);
+  std::sort(Temp_ind_begin, Temp_ind_begin + Individual_Max - 1, Compare_Ind);
   Surive_Num = 0;
+  Temp_ind = Temp_ind_begin;
   for (int Sel_Id = 0; Sel_Id < Individual_Max; Sel_Id++, Temp_ind++) {
     Temp_ind->Surive = 1.0 - 0.005 * Sel_Id;
-    if ((rand() / RAND_MAX) <= Temp_ind->Surive) {
+    if ((((double)rand()) / RAND_MAX) <= Temp_ind->Surive) {
       Surive_Num++;
       Temp_ind->Alive = true;
       *Sel_ind = *Temp_ind;
@@ -171,17 +190,44 @@ int Selction(Individual* pUnits_CF) {
   for (int Cp_Id = 0; Cp_Id < Surive_Num; Cp_Id++, pIter++, Sel_Iter++) {
     *pIter = *Sel_Iter;
   }
+  // DEBUG_Write(Sel_ind_Begin);
   free(Temp_ind_begin);
   free(Sel_ind_Begin);
   return Surive_Num;
 }
-void Gene_Encoude(Individual* pUnits_GE, int Surive_Num) { ; }
+void Gene_Mutation_(Individual* pUnit_GM_Begin, int Surive_GM) {
+  Individual* pUnit_GM = pUnit_GM_Begin;
+  for (int it_GM = 0; it_GM < Surive_GM; it_GM++, pUnit_GM++) {
+    for (int Coeff_GM = 0; Coeff_GM < CoeffNum; Coeff_GM++) {
+      Encode(pUnit_GM->Coeff[Coeff_GM], (pUnit_GM->Chrom)[Coeff_GM]);
+      // Mutation
+      if (((double)rand()) / RAND_MAX < Mutation_Probability) {
+        int Mutation_Index = (int)(27.0 * rand() / RAND_MAX);
+        (pUnit_GM->Chrom)[Coeff_GM][Mutation_Index] =
+            (pUnit_GM->Chrom)[Coeff_GM][Mutation_Index] == '0' ? '1' : '0';
+      }
+      // Re combination.
+      if (((double)rand()) / RAND_MAX < Gene_Recombination_Probability) {
+        int Recombination_Index = 1.0 * (Surive_GM - 1) * rand() / RAND_MAX;
+        int Gene_Location = 1.0 * (CoeffNum - 1) * rand() / RAND_MAX;
+        char Temp_Gene[Chromosome_Legth];
+        strcpy(Temp_Gene, (pUnit_GM->Chrom)[Coeff_GM]);
+        strcpy((pUnit_GM->Chrom)[Coeff_GM],
+               pUnit_GM_Begin[Recombination_Index].Chrom[Coeff_GM]);
+        strcpy(pUnit_GM_Begin[Recombination_Index].Chrom[Coeff_GM], Temp_Gene);
+      }
+    }
+  }
+}
 int main() {
   srand(time(NULL));
   if (!Load_Data()) {
     printf("Error in Load Data!\n");
   }
-  // if(!Write_Individual(Unit))
-  //   printf("Error in Write individual information!\n");
+  Init_Individual(Unit);
+  Calculate_Fitness(Unit);
+  std::cout << "Survival:" << Selction(Unit) << "\n";
+  if (!Write_Individual(Unit))
+    printf("Error in Write individual information!\n");
   return 0;
 }
