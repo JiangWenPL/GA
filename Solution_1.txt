@@ -1,0 +1,1458 @@
+Alevel=2,Blevel=2,Clevel=2 best mine level is 2 , count is 29
+
+Alevel=2,Blevel=2,Clevel=3 best mine level is 4 , count is 65
+
+Alevel=2,Blevel=2,Clevel=4 best mine level is 5 , count is 122
+
+Alevel=2,Blevel=2,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=2,Blevel=2,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=2,Blevel=2,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=3,Clevel=2 best mine level is 3 , count is 38
+
+Alevel=2,Blevel=3,Clevel=3 best mine level is 4 , count is 65
+
+Alevel=2,Blevel=3,Clevel=4 best mine level is 5 , count is 122
+
+Alevel=2,Blevel=3,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=2,Blevel=3,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=2,Blevel=3,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=4,Clevel=2 best mine level is 4 , count is 67
+
+Alevel=2,Blevel=4,Clevel=3 best mine level is 4 , count is 67
+
+Alevel=2,Blevel=4,Clevel=4 best mine level is 5 , count is 122
+
+Alevel=2,Blevel=4,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=2,Blevel=4,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=2,Blevel=4,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=5,Clevel=2 best mine level is 4 , count is 103
+
+Alevel=2,Blevel=5,Clevel=3 best mine level is 4 , count is 103
+
+Alevel=2,Blevel=5,Clevel=4 best mine level is 5 , count is 122
+
+Alevel=2,Blevel=5,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=2,Blevel=5,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=2,Blevel=5,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=6,Clevel=2 best mine level is 5 , count is 164
+
+Alevel=2,Blevel=6,Clevel=3 best mine level is 5 , count is 164
+
+Alevel=2,Blevel=6,Clevel=4 best mine level is 5 , count is 164
+
+Alevel=2,Blevel=6,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=2,Blevel=6,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=2,Blevel=6,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=7,Clevel=2 best mine level is 6 , count is 329
+
+Alevel=2,Blevel=7,Clevel=3 best mine level is 6 , count is 329
+
+Alevel=2,Blevel=7,Clevel=4 best mine level is 6 , count is 329
+
+Alevel=2,Blevel=7,Clevel=5 best mine level is 6 , count is 329
+
+Alevel=2,Blevel=7,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=2,Blevel=7,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=8,Clevel=2 best mine level is 7 , count is 568
+
+Alevel=2,Blevel=8,Clevel=3 best mine level is 7 , count is 568
+
+Alevel=2,Blevel=8,Clevel=4 best mine level is 7 , count is 568
+
+Alevel=2,Blevel=8,Clevel=5 best mine level is 7 , count is 568
+
+Alevel=2,Blevel=8,Clevel=6 best mine level is 7 , count is 568
+
+Alevel=2,Blevel=8,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=2,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=2,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=2,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=2,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=2,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=2,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=2,Clevel=2 best mine level is 2 , count is 33
+
+Alevel=3,Blevel=2,Clevel=3 best mine level is 4 , count is 66
+
+Alevel=3,Blevel=2,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=3,Blevel=2,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=3,Blevel=2,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=3,Blevel=2,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=3,Clevel=2 best mine level is 2 , count is 41
+
+Alevel=3,Blevel=3,Clevel=3 best mine level is 4 , count is 66
+
+Alevel=3,Blevel=3,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=3,Blevel=3,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=3,Blevel=3,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=3,Blevel=3,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=4,Clevel=2 best mine level is 4 , count is 67
+
+Alevel=3,Blevel=4,Clevel=3 best mine level is 4 , count is 67
+
+Alevel=3,Blevel=4,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=3,Blevel=4,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=3,Blevel=4,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=3,Blevel=4,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=5,Clevel=2 best mine level is 4 , count is 103
+
+Alevel=3,Blevel=5,Clevel=3 best mine level is 4 , count is 103
+
+Alevel=3,Blevel=5,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=3,Blevel=5,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=3,Blevel=5,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=3,Blevel=5,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=6,Clevel=2 best mine level is 5 , count is 164
+
+Alevel=3,Blevel=6,Clevel=3 best mine level is 5 , count is 164
+
+Alevel=3,Blevel=6,Clevel=4 best mine level is 5 , count is 164
+
+Alevel=3,Blevel=6,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=3,Blevel=6,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=3,Blevel=6,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=7,Clevel=2 best mine level is 6 , count is 329
+
+Alevel=3,Blevel=7,Clevel=3 best mine level is 6 , count is 329
+
+Alevel=3,Blevel=7,Clevel=4 best mine level is 6 , count is 329
+
+Alevel=3,Blevel=7,Clevel=5 best mine level is 6 , count is 329
+
+Alevel=3,Blevel=7,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=3,Blevel=7,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=8,Clevel=2 best mine level is 7 , count is 568
+
+Alevel=3,Blevel=8,Clevel=3 best mine level is 7 , count is 568
+
+Alevel=3,Blevel=8,Clevel=4 best mine level is 7 , count is 568
+
+Alevel=3,Blevel=8,Clevel=5 best mine level is 7 , count is 568
+
+Alevel=3,Blevel=8,Clevel=6 best mine level is 7 , count is 568
+
+Alevel=3,Blevel=8,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=3,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=3,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=3,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=3,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=3,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=3,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=2,Clevel=2 best mine level is 2 , count is 55
+
+Alevel=4,Blevel=2,Clevel=3 best mine level is 3 , count is 68
+
+Alevel=4,Blevel=2,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=4,Blevel=2,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=4,Blevel=2,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=4,Blevel=2,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=3,Clevel=2 best mine level is 2 , count is 55
+
+Alevel=4,Blevel=3,Clevel=3 best mine level is 3 , count is 68
+
+Alevel=4,Blevel=3,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=4,Blevel=3,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=4,Blevel=3,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=4,Blevel=3,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=4,Clevel=2 best mine level is 3 , count is 70
+
+Alevel=4,Blevel=4,Clevel=3 best mine level is 3 , count is 70
+
+Alevel=4,Blevel=4,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=4,Blevel=4,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=4,Blevel=4,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=4,Blevel=4,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=5,Clevel=2 best mine level is 4 , count is 103
+
+Alevel=4,Blevel=5,Clevel=3 best mine level is 4 , count is 103
+
+Alevel=4,Blevel=5,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=4,Blevel=5,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=4,Blevel=5,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=4,Blevel=5,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=6,Clevel=2 best mine level is 5 , count is 164
+
+Alevel=4,Blevel=6,Clevel=3 best mine level is 5 , count is 164
+
+Alevel=4,Blevel=6,Clevel=4 best mine level is 5 , count is 164
+
+Alevel=4,Blevel=6,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=4,Blevel=6,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=4,Blevel=6,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=7,Clevel=2 best mine level is 6 , count is 329
+
+Alevel=4,Blevel=7,Clevel=3 best mine level is 6 , count is 329
+
+Alevel=4,Blevel=7,Clevel=4 best mine level is 6 , count is 329
+
+Alevel=4,Blevel=7,Clevel=5 best mine level is 6 , count is 329
+
+Alevel=4,Blevel=7,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=4,Blevel=7,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=8,Clevel=2 best mine level is 6 , count is 569
+
+Alevel=4,Blevel=8,Clevel=3 best mine level is 6 , count is 569
+
+Alevel=4,Blevel=8,Clevel=4 best mine level is 6 , count is 569
+
+Alevel=4,Blevel=8,Clevel=5 best mine level is 6 , count is 569
+
+Alevel=4,Blevel=8,Clevel=6 best mine level is 6 , count is 569
+
+Alevel=4,Blevel=8,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=4,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=4,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=4,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=4,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=4,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=4,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=2,Clevel=2 best mine level is 3 , count is 84
+
+Alevel=5,Blevel=2,Clevel=3 best mine level is 3 , count is 84
+
+Alevel=5,Blevel=2,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=5,Blevel=2,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=5,Blevel=2,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=5,Blevel=2,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=3,Clevel=2 best mine level is 3 , count is 84
+
+Alevel=5,Blevel=3,Clevel=3 best mine level is 3 , count is 84
+
+Alevel=5,Blevel=3,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=5,Blevel=3,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=5,Blevel=3,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=5,Blevel=3,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=4,Clevel=2 best mine level is 3 , count is 84
+
+Alevel=5,Blevel=4,Clevel=3 best mine level is 3 , count is 84
+
+Alevel=5,Blevel=4,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=5,Blevel=4,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=5,Blevel=4,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=5,Blevel=4,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=5,Clevel=2 best mine level is 4 , count is 103
+
+Alevel=5,Blevel=5,Clevel=3 best mine level is 4 , count is 103
+
+Alevel=5,Blevel=5,Clevel=4 best mine level is 4 , count is 123
+
+Alevel=5,Blevel=5,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=5,Blevel=5,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=5,Blevel=5,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=6,Clevel=2 best mine level is 5 , count is 164
+
+Alevel=5,Blevel=6,Clevel=3 best mine level is 5 , count is 164
+
+Alevel=5,Blevel=6,Clevel=4 best mine level is 5 , count is 164
+
+Alevel=5,Blevel=6,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=5,Blevel=6,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=5,Blevel=6,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=7,Clevel=2 best mine level is 6 , count is 329
+
+Alevel=5,Blevel=7,Clevel=3 best mine level is 6 , count is 329
+
+Alevel=5,Blevel=7,Clevel=4 best mine level is 6 , count is 329
+
+Alevel=5,Blevel=7,Clevel=5 best mine level is 6 , count is 329
+
+Alevel=5,Blevel=7,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=5,Blevel=7,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=8,Clevel=2 best mine level is 6 , count is 569
+
+Alevel=5,Blevel=8,Clevel=3 best mine level is 6 , count is 569
+
+Alevel=5,Blevel=8,Clevel=4 best mine level is 6 , count is 569
+
+Alevel=5,Blevel=8,Clevel=5 best mine level is 6 , count is 569
+
+Alevel=5,Blevel=8,Clevel=6 best mine level is 6 , count is 569
+
+Alevel=5,Blevel=8,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=5,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=5,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=5,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=5,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=5,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=5,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=2,Clevel=2 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=2,Clevel=3 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=2,Clevel=4 best mine level is 4 , count is 136
+
+Alevel=6,Blevel=2,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=6,Blevel=2,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=6,Blevel=2,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=3,Clevel=2 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=3,Clevel=3 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=3,Clevel=4 best mine level is 4 , count is 136
+
+Alevel=6,Blevel=3,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=6,Blevel=3,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=6,Blevel=3,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=4,Clevel=2 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=4,Clevel=3 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=4,Clevel=4 best mine level is 4 , count is 136
+
+Alevel=6,Blevel=4,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=6,Blevel=4,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=6,Blevel=4,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=5,Clevel=2 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=5,Clevel=3 best mine level is 3 , count is 136
+
+Alevel=6,Blevel=5,Clevel=4 best mine level is 4 , count is 136
+
+Alevel=6,Blevel=5,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=6,Blevel=5,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=6,Blevel=5,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=6,Clevel=2 best mine level is 4 , count is 175
+
+Alevel=6,Blevel=6,Clevel=3 best mine level is 4 , count is 175
+
+Alevel=6,Blevel=6,Clevel=4 best mine level is 4 , count is 175
+
+Alevel=6,Blevel=6,Clevel=5 best mine level is 5 , count is 214
+
+Alevel=6,Blevel=6,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=6,Blevel=6,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=7,Clevel=2 best mine level is 5 , count is 336
+
+Alevel=6,Blevel=7,Clevel=3 best mine level is 5 , count is 336
+
+Alevel=6,Blevel=7,Clevel=4 best mine level is 5 , count is 336
+
+Alevel=6,Blevel=7,Clevel=5 best mine level is 5 , count is 336
+
+Alevel=6,Blevel=7,Clevel=6 best mine level is 6 , count is 371
+
+Alevel=6,Blevel=7,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=8,Clevel=2 best mine level is 6 , count is 569
+
+Alevel=6,Blevel=8,Clevel=3 best mine level is 6 , count is 569
+
+Alevel=6,Blevel=8,Clevel=4 best mine level is 6 , count is 569
+
+Alevel=6,Blevel=8,Clevel=5 best mine level is 6 , count is 569
+
+Alevel=6,Blevel=8,Clevel=6 best mine level is 6 , count is 569
+
+Alevel=6,Blevel=8,Clevel=7 best mine level is 7 , count is 612
+
+Alevel=6,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=6,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=6,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=6,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=6,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=6,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=2,Clevel=2 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=2,Clevel=3 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=2,Clevel=4 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=2,Clevel=5 best mine level is 4 , count is 238
+
+Alevel=7,Blevel=2,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=7,Blevel=2,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=3,Clevel=2 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=3,Clevel=3 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=3,Clevel=4 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=3,Clevel=5 best mine level is 4 , count is 238
+
+Alevel=7,Blevel=3,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=7,Blevel=3,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=4,Clevel=2 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=4,Clevel=3 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=4,Clevel=4 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=4,Clevel=5 best mine level is 4 , count is 238
+
+Alevel=7,Blevel=4,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=7,Blevel=4,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=5,Clevel=2 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=5,Clevel=3 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=5,Clevel=4 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=5,Clevel=5 best mine level is 4 , count is 238
+
+Alevel=7,Blevel=5,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=7,Blevel=5,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=6,Clevel=2 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=6,Clevel=3 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=6,Clevel=4 best mine level is 4 , count is 207
+
+Alevel=7,Blevel=6,Clevel=5 best mine level is 4 , count is 238
+
+Alevel=7,Blevel=6,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=7,Blevel=6,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=7,Clevel=2 best mine level is 5 , count is 336
+
+Alevel=7,Blevel=7,Clevel=3 best mine level is 5 , count is 336
+
+Alevel=7,Blevel=7,Clevel=4 best mine level is 5 , count is 336
+
+Alevel=7,Blevel=7,Clevel=5 best mine level is 5 , count is 336
+
+Alevel=7,Blevel=7,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=7,Blevel=7,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=8,Clevel=2 best mine level is 6 , count is 569
+
+Alevel=7,Blevel=8,Clevel=3 best mine level is 6 , count is 569
+
+Alevel=7,Blevel=8,Clevel=4 best mine level is 6 , count is 569
+
+Alevel=7,Blevel=8,Clevel=5 best mine level is 6 , count is 569
+
+Alevel=7,Blevel=8,Clevel=6 best mine level is 6 , count is 569
+
+Alevel=7,Blevel=8,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=7,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=7,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=7,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=7,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=7,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=7,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=2,Clevel=2 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=2,Clevel=3 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=2,Clevel=4 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=2,Clevel=5 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=2,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=8,Blevel=2,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=3,Clevel=2 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=3,Clevel=3 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=3,Clevel=4 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=3,Clevel=5 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=3,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=8,Blevel=3,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=4,Clevel=2 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=4,Clevel=3 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=4,Clevel=4 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=4,Clevel=5 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=4,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=8,Blevel=4,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=5,Clevel=2 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=5,Clevel=3 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=5,Clevel=4 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=5,Clevel=5 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=5,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=8,Blevel=5,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=6,Clevel=2 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=6,Clevel=3 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=6,Clevel=4 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=6,Clevel=5 best mine level is 4 , count is 365
+
+Alevel=8,Blevel=6,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=8,Blevel=6,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=7,Clevel=2 best mine level is 5 , count is 365
+
+Alevel=8,Blevel=7,Clevel=3 best mine level is 5 , count is 365
+
+Alevel=8,Blevel=7,Clevel=4 best mine level is 5 , count is 365
+
+Alevel=8,Blevel=7,Clevel=5 best mine level is 5 , count is 365
+
+Alevel=8,Blevel=7,Clevel=6 best mine level is 5 , count is 387
+
+Alevel=8,Blevel=7,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=8,Clevel=2 best mine level is 6 , count is 569
+
+Alevel=8,Blevel=8,Clevel=3 best mine level is 6 , count is 569
+
+Alevel=8,Blevel=8,Clevel=4 best mine level is 6 , count is 569
+
+Alevel=8,Blevel=8,Clevel=5 best mine level is 6 , count is 569
+
+Alevel=8,Blevel=8,Clevel=6 best mine level is 6 , count is 569
+
+Alevel=8,Blevel=8,Clevel=7 best mine level is 6 , count is 620
+
+Alevel=8,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=8,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=8,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=8,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=8,Blevel=10,Clevel=2 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=3 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=4 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=5 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=6 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=7 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=8 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=9 best mine level is 9 , count is 2040
+
+Alevel=8,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=2,Clevel=2 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=2,Clevel=3 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=2,Clevel=4 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=2,Clevel=5 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=2,Clevel=6 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=2,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=2,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=2,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=3,Clevel=2 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=3,Clevel=3 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=3,Clevel=4 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=3,Clevel=5 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=3,Clevel=6 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=3,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=3,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=3,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=4,Clevel=2 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=4,Clevel=3 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=4,Clevel=4 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=4,Clevel=5 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=4,Clevel=6 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=4,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=4,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=4,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=5,Clevel=2 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=5,Clevel=3 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=5,Clevel=4 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=5,Clevel=5 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=5,Clevel=6 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=5,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=5,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=5,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=6,Clevel=2 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=6,Clevel=3 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=6,Clevel=4 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=6,Clevel=5 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=6,Clevel=6 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=6,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=6,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=6,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=7,Clevel=2 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=7,Clevel=3 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=7,Clevel=4 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=7,Clevel=5 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=7,Clevel=6 best mine level is 5 , count is 618
+
+Alevel=9,Blevel=7,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=7,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=7,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=8,Clevel=2 best mine level is 5 , count is 625
+
+Alevel=9,Blevel=8,Clevel=3 best mine level is 5 , count is 625
+
+Alevel=9,Blevel=8,Clevel=4 best mine level is 5 , count is 625
+
+Alevel=9,Blevel=8,Clevel=5 best mine level is 5 , count is 625
+
+Alevel=9,Blevel=8,Clevel=6 best mine level is 5 , count is 625
+
+Alevel=9,Blevel=8,Clevel=7 best mine level is 5 , count is 686
+
+Alevel=9,Blevel=8,Clevel=8 best mine level is 7 , count is 938
+
+Alevel=9,Blevel=8,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=9,Clevel=2 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=3 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=4 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=5 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=6 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=7 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=8 best mine level is 7 , count is 980
+
+Alevel=9,Blevel=9,Clevel=9 best mine level is 8 , count is 1520
+
+Alevel=9,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=9,Blevel=10,Clevel=2 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=3 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=4 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=5 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=6 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=7 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=8 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=9 best mine level is 8 , count is 2066
+
+Alevel=9,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=2,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=2,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=2,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=3,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=3,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=3,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=4,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=4,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=4,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=5,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=5,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=5,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=6,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=6,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=6,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=7,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=7,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=7,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=8,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=8,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=8,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=9,Clevel=2 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=3 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=4 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=5 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=6 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=7 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=8 best mine level is 6 , count is 1340
+
+Alevel=10,Blevel=9,Clevel=9 best mine level is 7 , count is 1591
+
+Alevel=10,Blevel=9,Clevel=10 best mine level is 9 , count is 3054
+
+Alevel=10,Blevel=10,Clevel=2 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=3 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=4 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=5 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=6 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=7 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=8 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=9 best mine level is 8 , count is 2066
+
+Alevel=10,Blevel=10,Clevel=10 best mine level is 9 , count is 3054
+

@@ -21,6 +21,10 @@
         "new": "cpp",
         "sstream": "cpp",
         "streambuf": "cpp",
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "algorithm": "cpp",
+        "string": "cpp",
+        "vector": "cpp",
+        "cmath": "cpp"
     }
 }
