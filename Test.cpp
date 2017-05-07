@@ -32,15 +32,25 @@ map<char, string> HexToBin = {
     {'8', "1000"}, {'9', "1001"}, {'A', "1010"}, {'B', "1011"},
     {'C', "1100"}, {'D', "1101"}, {'E', "1110"}, {'F', "1111"}};
 // void HexToBin(char *Hex, char *Buf) { ; }
-void Encode(double Code, char *Chrome) {
+char *Encode(double Code, char *Chrome) {
   char HexBuf[8 + 1];
-  sprintf(HexBuf, "%X", (int)floor(Code * 1000000));
+  if (Code > 10 || Code < -10) Code = fmod(Code,10);
+  sprintf(HexBuf, "%07X", (int)floor(Code * 1000000));
   for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
     sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
   }
+  return Chrome;
 }
-double Decode(char *Chrome){
-  
+double Decode(char *Chrome) {
+  char DecodeBuf[8 + 1];
+  memset(DecodeBuf, 0, sizeof(DecodeBuf));
+  string Decoded = Chrome;
+  for (int Iter_BH = 0; Iter_BH < HexChromLength; Iter_BH++) {
+    DecodeBuf[Iter_BH] = BinToHex[Decoded.substr(Iter_BH * 4, 4)];
+  }
+  int decodedNum;
+  sscanf(DecodeBuf, "%X", &decodedNum);
+  return (decodedNum * 1.0 / 1000000);
 }
 int main() {
   // srand(time(NULL));
@@ -48,26 +58,32 @@ int main() {
   //   cout << (4.0*rand() / RAND_MAX)-2<< " ";
   // }
   // cout << endl;
-  double x = 9.9999999;
-  char HexBuf[8 + 1];
-  char Chrome[28 + 1];
-  cout << "Origin Num = " << (int)floor(x * 1000000) << endl;
-  sprintf(HexBuf, "%X", (int)floor(x * 1000000));
-  printf("HexBuf=%s\n", HexBuf);
-  for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
-    sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
-  }
-  printf("Aftter encode the chromosome is:\n%s\n", Chrome);
-  char DecodeBuf[8 + 1];
-  string Decoded = Chrome;
-  for (int Iter_BH = 0; Iter_BH < HexChromLength; Iter_BH++) {
-    cout << "Substring = " << Decoded.substr(Iter_BH * 4, 4) << '\n';
-    printf("%d: %c\n", Iter_BH, BinToHex[Decoded.substr(Iter_BH * 4, 4)]);
-    DecodeBuf[Iter_BH] = BinToHex[Decoded.substr(Iter_BH * 4, 4)];
-  }
-  printf("After decode:\n%s\n", DecodeBuf);
-  int decodedNum;
-  sscanf(DecodeBuf, "%X", &decodedNum);
-  printf("DecodedNum=%d\n", decodedNum);
+  // double x = 9.9999999;
+  // char HexBuf[8 + 1];
+  // char Chrome[28 + 1];
+  // cout << "Origin Num = " << (int)floor(x * 1000000) << endl;
+  // sprintf(HexBuf, "%X", (int)floor(x * 1000000));
+  // printf("HexBuf=%s\n", HexBuf);
+  // for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
+  //   sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
+  // }
+  // printf("Aftter encode the chromosome is:\n%s\n", Chrome);
+  // char DecodeBuf[8 + 1];
+  // string Decoded = Chrome;
+  // for (int Iter_BH = 0; Iter_BH < HexChromLength; Iter_BH++) {
+  //   cout << "Substring = " << Decoded.substr(Iter_BH * 4, 4) << '\n';
+  //   printf("%d: %c\n", Iter_BH, BinToHex[Decoded.substr(Iter_BH * 4, 4)]);
+  //   DecodeBuf[Iter_BH] = BinToHex[Decoded.substr(Iter_BH * 4, 4)];
+  // }
+  // printf("After decode:\n%s\n", DecodeBuf);
+  // int decodedNum;
+  // sscanf(DecodeBuf, "%X", &decodedNum);
+  // printf("DecodedNum=%d\n", decodedNum);
+  double a = -111.23456;
+  char b[28];
+  Encode(a, b);
+  // printf("Encoded: %s\n", b);
+  cout << Decode(b) << endl;
+  printf("%f", fmod(a, 10));
   return 0;
 }

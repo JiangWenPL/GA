@@ -20,6 +20,7 @@ const int CoeffNum = 6 * 3 + 1;
 const int Depend_Var = 3;
 const int Cal_Fit_Num = 800;
 const int Generation_Max = 1000;
+const int HexChromLength = 8;
 std::map<std::string, char> BinToHex = {
     {"0000", '0'}, {"0001", '1'}, {"0010", '2'}, {"0011", '3'},
     {"0100", '4'}, {"0101", '5'}, {"0110", '6'}, {"0111", '7'},
@@ -43,9 +44,6 @@ struct Individual {
   //   Fitness = 0;
   // }
 };
-bool Compare_Ind(Individual Ind1, Individual Ind2) {
-  return (Ind1.Fitness < Ind2.Fitness);
-}
 // Global var:
 Individual Unit[Individual_Max];
 Individual BestUnit[Generation_Max];
@@ -53,6 +51,29 @@ int Generation = 0;
 int Surive_Num = 0;
 // Unit[GeneID].Coeff[0] is the constant.
 // 1~6 is about x1.
+bool Compare_Ind(Individual Ind1, Individual Ind2) {
+  return (Ind1.Fitness < Ind2.Fitness);
+}
+char *Encode(double Code, char *Chrome) {
+  char HexBuf[8 + 1];
+  if (Code > 10 || Code < -10) Code = fmod(Code,10);
+  sprintf(HexBuf, "%07X", (int)floor(Code * 1000000));
+  for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
+    sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
+  }
+  return Chrome;
+}
+double Decode(char *Chrome) {
+  char DecodeBuf[8 + 1];
+  memset(DecodeBuf, 0, sizeof(DecodeBuf));
+  string Decoded = Chrome;
+  for (int Iter_BH = 0; Iter_BH < HexChromLength; Iter_BH++) {
+    DecodeBuf[Iter_BH] = BinToHex[Decoded.substr(Iter_BH * 4, 4)];
+  }
+  int decodedNum;
+  sscanf(DecodeBuf, "%X", &decodedNum);
+  return (decodedNum * 1.0 / 1000000);
+}
 double Function(const double* pCoeff, double x1, double x2, double x3) {
   return (pCoeff[0] + pCoeff[1] * exp(pCoeff[2] * x1) +
           pCoeff[3] * log(pCoeff[4] * x1) + pCoeff[5] * x1 +
