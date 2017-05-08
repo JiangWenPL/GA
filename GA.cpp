@@ -147,7 +147,7 @@ bool Write_Best() {
 bool Write_Fitness() {
   FILE *fpBFitness = NULL, *fpWFitness = NULL;
   fpBFitness = fopen("./Best_Fitness.txt", "a+");
-  fpWFitness = fopen("./Worst_Fitness", "a+");
+  fpWFitness = fopen("./Worst_Fitness.txt", "a+");
   if (fpBFitness == NULL || fpWFitness == NULL) return false;
   for (std::vector<Individual>::iterator it_WF_Best = BestUnit.begin();
        it_WF_Best != BestUnit.end(); ++it_WF_Best) {
@@ -187,6 +187,9 @@ void Calculate_Fitness(Individual* pUnits_CF) {
           std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
                              pCheck[i_CF][2])) -
                    pCheck[i_CF][3]);
+          //  pow((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
+          //                    pCheck[i_CF][2])) -
+          //          pCheck[i_CF][3],2);
       // printf("Unit[%d] the test case%d: %f\n", GeneID_CF, i_CF,
       //        std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0],
       //                           pCheck[i_CF][1], pCheck[i_CF][2])) -
