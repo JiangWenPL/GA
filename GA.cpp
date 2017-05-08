@@ -155,7 +155,7 @@ bool Write_Fitness() {
   }
   for (std::vector<Individual>::iterator it_WF_Worst = WorstUnit.begin();
        it_WF_Worst != WorstUnit.end(); ++it_WF_Worst) {
-    fprintf(fpBFitness, "%.6f\n", it_WF_Worst->Fitness);
+    fprintf(fpWFitness, "%.6f\n", it_WF_Worst->Fitness);
   }
   if (fclose(fpBFitness) != 0 || fclose(fpWFitness) != 0) return false;
   return true;
