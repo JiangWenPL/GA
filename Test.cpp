@@ -17,9 +17,9 @@ using namespace std;
 //   double Coeff[Gene_Max][6 * 3 + 1];
 //   double Fitness;
 // };
-const int CoeffNum = 6*3 + 1;
+const int CoeffNum = 6 * 3 + 1;
 struct Individual {
-  char Chrom[CoeffNum][Chromosome_Legth];
+  // char Chrom[CoeffNum][Chromosome_Legth];
   double Coeff[CoeffNum];
   double Fitness;
   double Surive;
@@ -47,7 +47,7 @@ map<char, string> HexToBin = {
 // void HexToBin(char *Hex, char *Buf) { ; }
 char *Encode(double Code, char *Chrome) {
   char HexBuf[8 + 1];
-  if (Code > 10 || Code < -10) Code = fmod(Code,10);
+  if (Code > 10 || Code < -10) Code = fmod(Code, 10);
   sprintf(HexBuf, "%07X", (int)floor(Code * 1000000));
   for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
     sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
@@ -99,5 +99,17 @@ int main() {
   // printf("Encoded: %s\n", b);
   cout << Decode(b) << endl;
   printf("%f", fmod(a, 10));
+  /*
+  // Recombination.
+      if (((double)rand()) / RAND_MAX < Gene_Recombination_Probability) {
+        int Recombination_Index = 1.0 * (Surive_GM - 1) * rand() / RAND_MAX;
+        int Gene_Location = 1.0 * (CoeffNum - 1) * rand() / RAND_MAX;
+        char Temp_Gene[Chromosome_Legth];
+        strcpy(Temp_Gene, (pUnit_GM->Chrom)[Coeff_GM]);
+        strcpy((pUnit_GM->Chrom)[Coeff_GM],
+               pUnit_GM_Begin[Recombination_Index].Chrom[Coeff_GM]);
+        strcpy(pUnit_GM_Begin[Recombination_Index].Chrom[Coeff_GM], Temp_Gene);
+      }
+      */
   return 0;
 }

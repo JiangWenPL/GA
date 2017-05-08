@@ -11,8 +11,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
-const int IterateGeneration = 100;
-const double Mutation_Probability = 0.001;
+const double Mutation_Probability = 0.01;
 const int Row_Max = 89266;
 const int Col_Max = 5;
 const int Individual_Max = 20000;
@@ -20,7 +19,7 @@ const int Chromosome_Legth = 28;
 const int CoeffNum = 6 * 3 + 1;
 const int Depend_Var = 3;
 const int Cal_Fit_Num = 800;
-// const int Generation_Max = 1000;
+const int Generation_Max = 1000;
 const int HexChromLength = 8;
 const double Gene_Recombination_Probability = 0.5;
 std::map<std::string, char> BinToHex = {
@@ -48,8 +47,7 @@ struct Individual {
 };
 // Global var:
 Individual Unit[Individual_Max];
-std::vector<Individual> BestUnit;
-std::vector<Individual> WorstUnit;
+Individual BestUnit[Generation_Max];
 int Generation = 0;
 int Surive_Num = 0;
 // Unit[GeneID].Coeff[0] is the constant.
@@ -128,38 +126,6 @@ bool DEBUG_Write(const Individual* pDEBUG, int RangeInd, int Range_Coeff) {
   if (fclose(fpDEBUG) != 0) return false;
   return true;
 }
-bool Write_Best() {
-  FILE* fpBest = NULL;
-  fpBest = fopen("./Best.txt", "a+");
-  if (fpBest == NULL) return false;
-  int cnt_WB = 0;
-  for (std::vector<Individual>::iterator it_WB = BestUnit.begin();
-       it_WB != BestUnit.end(); ++it_WB, ++cnt_WB) {
-    fprintf(fpBest, "Generation %d Fitness:%.6f\n", cnt_WB, it_WB->Fitness);
-    for (int iWB = 0; iWB < CoeffNum; iWB++) {
-      fprintf(fpBest, "%.6f ", it_WB->Coeff[iWB]);
-    }
-    fprintf(fpBest, "\n");
-  }
-  if (fclose(fpBest) != 0) return false;
-  return true;
-}
-bool Write_Fitness() {
-  FILE *fpBFitness = NULL, *fpWFitness = NULL;
-  fpBFitness = fopen("./Best_Fitness.txt", "a+");
-  fpWFitness = fopen("./Worst_Fitness", "a+");
-  if (fpBFitness == NULL || fpWFitness == NULL) return false;
-  for (std::vector<Individual>::iterator it_WF_Best = BestUnit.begin();
-       it_WF_Best != BestUnit.end(); ++it_WF_Best) {
-    fprintf(fpBFitness, "%.6f\n", it_WF_Best->Fitness);
-  }
-  for (std::vector<Individual>::iterator it_WF_Worst = WorstUnit.begin();
-       it_WF_Worst != WorstUnit.end(); ++it_WF_Worst) {
-    fprintf(fpBFitness, "%.6f\n", it_WF_Worst->Fitness);
-  }
-  if (fclose(fpBFitness) != 0 || fclose(fpWFitness) != 0) return false;
-  return true;
-}
 void Init_Individual(Individual* pUnits_II) {
   for (int GeneID_II = 0; GeneID_II < Individual_Max;
        GeneID_II++, pUnits_II++) {
@@ -209,10 +175,6 @@ int Selction(Individual* pUnits_CF) {
     *Temp_ind = *pIter;
   }
   std::sort(Temp_ind_begin, Temp_ind_begin + Individual_Max - 1, Compare_Ind);
-  // Write_Individual(Temp_ind_begin);
-  // DEBUG_Write(Temp_ind_begin, Individual_Max, CoeffNum);
-  BestUnit.push_back(*Temp_ind_begin);
-  WorstUnit.push_back(*(Temp_ind_begin + Individual_Max - 1));
   Surive_Num = 0;
   Temp_ind = Temp_ind_begin;
   for (int Sel_Id = 0; Sel_Id < Individual_Max; Sel_Id++, Temp_ind++) {
@@ -268,16 +230,12 @@ void Gene_Recombination(Individual* pUnit_GR_Begin, int Surive_GR) {
     }
   }
 }
-void New_Generation(Individual* pUnit_NG_Begin, int Surive_NG) {
-  int Half = Individual_Max / 2;
-  if (Surive_NG < Half) {
-    for (int iter_NG = Surive_NG, i_Better = 0; iter_NG < Half;
-         iter_NG++, i_Better++) {
-      pUnit_NG_Begin[iter_NG] = pUnit_NG_Begin[i_Better];
+void New_Generation(Individual* pUnit_NGs_Begin, int Surive_NG) {
+  if (Surive_NG < Individual_Max / 2) {
+    for (int iter_NG = Individual_Max / 2 - Surive_NG;
+         iter_NG < Individual_Max / 2; iter_NG++) {
+           
     }
-  }
-  for (int iterNG = 0; iterNG < Half; iterNG++) {
-    pUnit_NG_Begin[Half + iterNG] = pUnit_NG_Begin[iterNG];
   }
 }
 int main() {
@@ -285,27 +243,10 @@ int main() {
   if (!Load_Data()) {
     printf("Error in Load Data!\n");
   }
-  int order, Survival_Num;
   Init_Individual(Unit);
-  do {
-    for (int iter = 0; iter < IterateGeneration; iter++, Generation++) {
-      Calculate_Fitness(Unit);
-      Survival_Num = Selction(Unit);
-      Gene_Mutation(Unit, Surive_Num);
-      Gene_Recombination(Unit, Survival_Num);
-      New_Generation(Unit, Surive_Num);
-      printf("After %d Generations:\n", Generation);
-      printf("  The Best perfom indvidual's fitness is %.6f\n",
-             (BestUnit.back()).Fitness);
-      printf("  The worst perfom indvidual's fitness is %.6f\n",
-             (WorstUnit.back()).Fitness);
-    }
-    // std::cout << "Survival:" << Selction(Unit) << "\n";
-    // if (!Write_Individual(Unit))
-    //   printf("Error in Write individual information!\n");
-    // Write_Individual(Unit);
-  } while (scanf("%d", &order) && order);
-  Write_Best();
-  Write_Fitness();
+  Calculate_Fitness(Unit);
+  std::cout << "Survival:" << Selction(Unit) << "\n";
+  if (!Write_Individual(Unit))
+    printf("Error in Write individual information!\n");
   return 0;
 }
