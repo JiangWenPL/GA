@@ -11,6 +11,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+// Constant definetion.
 const int IterateGeneration = 100;
 const double Mutation_Probability = 0.001;
 const int Row_Max = 89266;
@@ -23,6 +24,7 @@ const int Cal_Fit_Num = 800;
 // const int Generation_Max = 1000;
 const int HexChromLength = 8;
 const double Gene_Recombination_Probability = 0.5;
+// Use new feature in C++11 to initialize Gene encode mapings.
 std::map<std::string, char> BinToHex = {
     {"0000", '0'}, {"0001", '1'}, {"0010", '2'}, {"0011", '3'},
     {"0100", '4'}, {"0101", '5'}, {"0110", '6'}, {"0111", '7'},
@@ -33,30 +35,34 @@ std::map<char, std::string> HexToBin = {
     {'4', "0100"}, {'5', "0101"}, {'6', "0110"}, {'7', "0111"},
     {'8', "1000"}, {'9', "1001"}, {'A', "1010"}, {'B', "1011"},
     {'C', "1100"}, {'D', "1101"}, {'E', "1110"}, {'F', "1111"}};
-double Data[Row_Max][Col_Max];
 struct Individual {
-  char Chrom[CoeffNum][Chromosome_Legth];
-  double Coeff[CoeffNum];
+  char Chrom[CoeffNum][Chromosome_Legth];  // Chromosome
+  double Coeff[CoeffNum];                  // Coefficient of our funcitons.
   double Fitness;
   double Surive;
   bool Alive;
-  // Individual() {
-  //   memset(Chrom, 0, sizeof(Chrom));
-  //   memset(Coeff, 0, sizeof(Coeff));
-  //   Fitness = 0;
-  // }
+  Individual() {
+    memset(Chrom, 0, sizeof(Chrom));
+    memset(Coeff, 0, sizeof(Coeff));
+    Fitness = 0;
+    Surive = 0;
+    Alive = false;
+  }  // Constructo funcions.
 };
 // Global var:
+// 2D array Data is used to read origin data.
+double Data[Row_Max][Col_Max];
 Individual Unit[Individual_Max];
+// Struct array of individuals.
 std::vector<Individual> BestUnit;
 std::vector<Individual> WorstUnit;
 int Generation = 0;
 int Surive_Num = 0;
 // Unit[GeneID].Coeff[0] is the constant.
-// 1~6 is about x1.
+// 1~6 is about x1. 7~13 is about x1
 bool Compare_Ind(Individual Ind1, Individual Ind2) {
   return (Ind1.Fitness < Ind2.Fitness);
-}
+}  // Compare funciton is prepare for calling function std::sort.
 char* Encode(double Code, char* Chrome) {
   char HexBuf[8 + 1];
   if (Code > 10 || Code < -10) Code = fmod(Code, 10);
@@ -187,9 +193,9 @@ void Calculate_Fitness(Individual* pUnits_CF) {
           std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
                              pCheck[i_CF][2])) -
                    pCheck[i_CF][3]);
-          //  pow((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
-          //                    pCheck[i_CF][2])) -
-          //          pCheck[i_CF][3],2);
+      //  pow((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
+      //                    pCheck[i_CF][2])) -
+      //          pCheck[i_CF][3],2);
       // printf("Unit[%d] the test case%d: %f\n", GeneID_CF, i_CF,
       //        std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0],
       //                           pCheck[i_CF][1], pCheck[i_CF][2])) -
