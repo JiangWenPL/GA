@@ -1,3 +1,12 @@
+/*
+*    GA.cpp
+*    Cpp Project for 2017 ZJU Mathematical Modeling Contest.
+*	   Team production.
+*	   Team member: Jiang Wen, He Kangrui, Cao Zhefeng.
+*    This file was created by Wen Jiang on May 3, 2017.
+*    Copyright (c) 2017 Wen Jiang. All rights reserved.
+*/
+
 #include <algorithm>
 #include <cctype>
 #include <cmath>
@@ -56,31 +65,86 @@ Individual Unit[Individual_Max];
 // Struct array of individuals.
 std::vector<Individual> BestUnit;
 std::vector<Individual> WorstUnit;
+// To memory the best and worst individuals in every generation.
 int Generation = 0;
 int Surive_Num = 0;
 // Unit[GeneID].Coeff[0] is the constant.
 // 1~6 is about x1. 7~13 is about x1
 bool Compare_Ind(Individual Ind1, Individual Ind2) {
   return (Ind1.Fitness < Ind2.Fitness);
-}  // Compare funciton is prepare for calling function std::sort.
+}  // Compare funciton is prepared for calling function std::sort.
+char* Encode(double Code, char* Chrome);
+double Decode(char* Chrome);
+double Function(const double* pCoeff, double x1, double x2, double x3);
+bool Load_Data();
+bool Write_Individual(const Individual* pUnits_WI);
+bool DEBUG_Write(const Individual* pDEBUG, int RangeInd, int Range_Coeff);
+bool Write_Best();
+bool Write_Fitness();
+void Init_Individual(Individual* pUnits_II);
+void Calculate_Fitness(Individual* pUnits_CF);
+int Selction(Individual* pUnits_CF);
+void Gene_Mutation(Individual* pUnit_GM_Begin, int Surive_GM);
+void Gene_Recombination(Individual* pUnit_GR_Begin, int Surive_GR);
+void New_Generation(Individual* pUnit_NG_Begin, int Surive_NG);
+int main() {
+  srand(time(NULL));
+  if (!Load_Data()) {
+    printf("Error in Load Data!\n");
+  }
+  int order, Survival_Num;
+  Init_Individual(Unit);
+  do {
+    for (int iter = 0; iter < IterateGeneration; iter++, Generation++) {
+      //Go in this loop means a new generation.
+      Calculate_Fitness(Unit);
+      //Calculate fitness.
+      Survival_Num = Selction(Unit);
+      //Count surival num.
+      Gene_Mutation(Unit, Surive_Num);
+      //Gene Mutation.
+      Gene_Recombination(Unit, Survival_Num);
+      //Gene recombination.
+      New_Generation(Unit, Surive_Num);
+      //Generate next generation.
+      printf("After %d Generations:\n", Generation);
+      printf("  The Best perfom indvidual's fitness is %.6f\n",
+             (BestUnit.back()).Fitness);
+      printf("  The worst perfom indvidual's fitness is %.6f\n",
+             (WorstUnit.back()).Fitness);
+    }
+    printf(
+        "After %d Generations:\n type the non-zero number to continue "
+        "iterations, type zero to end the program.\n",
+        Generation);
+  } while (scanf("%d", &order) && order);
+  Write_Best();//Write best unit.
+  Write_Fitness();//write fitness statistics.
+  return 0;
+}
 char* Encode(double Code, char* Chrome) {
-  char HexBuf[8 + 1];
+  char HexBuf[8 + 1];  // Character array for buffer.
   if (Code > 10 || Code < -10) Code = fmod(Code, 10);
   sprintf(HexBuf, "%07X", (int)floor(Code * 1000000));
+  // Transport to hex intergers.
   for (int Iter_HB = 0; Iter_HB < HexChromLength; Iter_HB++) {
     sprintf(Chrome + 4 * Iter_HB, "%s", HexToBin[HexBuf[Iter_HB]].c_str());
-  }
+  }  // Trans for by the order of hex intergers.
   return Chrome;
 }
 double Decode(char* Chrome) {
   char DecodeBuf[8 + 1];
   memset(DecodeBuf, 0, sizeof(DecodeBuf));
+  // Initialize.
   std::string Decoded = Chrome;
   for (int Iter_BH = 0; Iter_BH < HexChromLength; Iter_BH++) {
     DecodeBuf[Iter_BH] = BinToHex[Decoded.substr(Iter_BH * 4, 4)];
+    // Get 4 bits every to and use the mapping to find whcich hex number it
+    // representing.
   }
   int decodedNum;
   sscanf(DecodeBuf, "%X", &decodedNum);
+  // Transfor hex string to hex number.
   return (decodedNum * 1.0 / 1000000);
 }
 double Function(const double* pCoeff, double x1, double x2, double x3) {
@@ -91,6 +155,7 @@ double Function(const double* pCoeff, double x1, double x2, double x3) {
           pCoeff[12] * (1.0 / (1 + x2)) + pCoeff[13] * exp(pCoeff[14] * x3) +
           pCoeff[15] * log(1 + x3) + pCoeff[16] * x3 + pCoeff[17] * x3 * x3 +
           pCoeff[18] * (1.0 / (1 + x3)));
+  // The target function set by us previously.
 }
 bool Load_Data() {
   FILE* fpData = NULL;
@@ -193,13 +258,6 @@ void Calculate_Fitness(Individual* pUnits_CF) {
           std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
                              pCheck[i_CF][2])) -
                    pCheck[i_CF][3]);
-      //  pow((Function(pUnits_CF->Coeff, pCheck[i_CF][0], pCheck[i_CF][1],
-      //                    pCheck[i_CF][2])) -
-      //          pCheck[i_CF][3],2);
-      // printf("Unit[%d] the test case%d: %f\n", GeneID_CF, i_CF,
-      //        std::abs((Function(pUnits_CF->Coeff, pCheck[i_CF][0],
-      //                           pCheck[i_CF][1], pCheck[i_CF][2])) -
-      //                 pCheck[i_CF][3]));
     }
   }
   free(pCheck);
@@ -288,33 +346,4 @@ void New_Generation(Individual* pUnit_NG_Begin, int Surive_NG) {
   for (int iterNG = 0; iterNG < Half; iterNG++) {
     pUnit_NG_Begin[Half + iterNG] = pUnit_NG_Begin[iterNG];
   }
-}
-int main() {
-  srand(time(NULL));
-  if (!Load_Data()) {
-    printf("Error in Load Data!\n");
-  }
-  int order, Survival_Num;
-  Init_Individual(Unit);
-  do {
-    for (int iter = 0; iter < IterateGeneration; iter++, Generation++) {
-      Calculate_Fitness(Unit);
-      Survival_Num = Selction(Unit);
-      Gene_Mutation(Unit, Surive_Num);
-      Gene_Recombination(Unit, Survival_Num);
-      New_Generation(Unit, Surive_Num);
-      printf("After %d Generations:\n", Generation);
-      printf("  The Best perfom indvidual's fitness is %.6f\n",
-             (BestUnit.back()).Fitness);
-      printf("  The worst perfom indvidual's fitness is %.6f\n",
-             (WorstUnit.back()).Fitness);
-    }
-    // std::cout << "Survival:" << Selction(Unit) << "\n";
-    // if (!Write_Individual(Unit))
-    //   printf("Error in Write individual information!\n");
-    // Write_Individual(Unit);
-  } while (scanf("%d", &order) && order);
-  Write_Best();
-  Write_Fitness();
-  return 0;
 }
